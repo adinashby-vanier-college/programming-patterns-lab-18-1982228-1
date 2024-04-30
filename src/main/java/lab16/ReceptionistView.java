@@ -250,7 +250,7 @@ public class ReceptionistView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {                                          
         int row = tablePatients.getSelectedRow();
 
         if (row < 0) {
@@ -262,14 +262,14 @@ public class ReceptionistView extends javax.swing.JFrame {
             DefaultTableModel model = (DefaultTableModel) tablePatients.getModel();
             model.removeRow(row);
         }
-    }//GEN-LAST:event_btnDeleteActionPerformed
+    }                                         
 
-    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {                                         
         tfName.setText("");
         tfEmail.setText("");
         tfPhoneNumber.setText("");
         tfAddress.setText("");
-    }//GEN-LAST:event_btnClearActionPerformed
+    }                                        
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         String name = tfName.getText();
